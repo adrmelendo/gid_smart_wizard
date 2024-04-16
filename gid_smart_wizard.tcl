@@ -392,7 +392,7 @@ proc smart_wizard::AutoStep {win stepid} {
                     grid [set $lab] [set $ent] -sticky ew
                 }
                 button {
-                    set but$order [ttk::button $fr.b$order -text $txt -command [list $value]]
+                    set but$order [ttk::button $fr.b$order -text $txt -command $value]
                     set button "but$order"
                     grid [expr $$button] -columnspan 3 -sticky ew
                 }
